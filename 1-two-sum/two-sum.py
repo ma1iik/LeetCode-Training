@@ -4,8 +4,7 @@ class Solution:
         for i, num in enumerate(nums):
             pair = target - num
             if pair in arr:
-                index = arr.index(pair)
-                return [index, i]
+                return [arr.index(pair), i]
             else:
                 arr.append(num)
         return [0, 0]
